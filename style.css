@@ -1,0 +1,132 @@
+/* 
+/* Stying Presets */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+:root{
+    --header-logo-text:#1F2937;
+    overflow-x: hidden;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+Header Styling start
+*/
+.header{
+    background-color:var(--header-logo-text) ;
+    font-size: 24px;
+    color: #F9FAF8;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+}
+
+.linkContainer > ul > li{ 
+    list-style: none;
+    font-size: 18px;
+}
+.linkContainer > ul{ 
+    display: flex;
+    gap: 20px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.linkContainer{
+    display: flex;
+}
+/* 
+Header Styling END
+*/
+
+/* Styling First Section */
+
+.top-text{
+    display: flex;
+    color: #F9FAF8;
+    background-color: var(--header-logo-text);
+    justify-content: center;
+    gap: 50px;
+}
+
+.left > h1{
+   font-size: 48px;
+   font-family: 'Roboto',sans-serif;
+   font-weight: bolder; 
+}
+.left > p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    color: #E5E7EB;
+ }
+
+ .left > button{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 30px;
+     width: 100px;
+     background-color:#3882f6 ;
+     border: none;
+     color: #E5E7EB;
+     font-weight: bold;
+     border-radius: 3px;
+ }
+
+ .left,
+ .right{
+     display: flex;
+     justify-content: center;
+ }
+.left{
+    flex-direction: column;
+    max-width: 400px;    
+}
+
+.right > img{
+    width: auto;
+    height: 400px;
+    padding-bottom: 10px;
+}
+/* Styling First Section end */
+
+/* Stying Employee Section */
+.employee-info > h1{
+    font-size: 48px;
+   font-family: 'Roboto',sans-serif;
+   font-weight: bolder;  
+   padding-bottom: 20px;       
+}
+
+.employee-info{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.listContainer > ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.listContainer{
+    display: flex;
+    justify-content: center;
+}
+.listContainer > ul > li > p{
+    padding-top: 10px;
+    font-family: 'Roboto',sans-serif;    
+}
+
+.employee-image{
+    display: flex;
+    height: 250px;
+    border: 3px solid #3882f6;
+    border-radius:3px ;
+}
+
+/* Employee Section END */
