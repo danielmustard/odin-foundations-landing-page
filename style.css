@@ -1,6 +1,6 @@
 /* 
 /* Stying Presets */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap');
 :root{
     --header-logo-text:#1F2937;
     overflow-x: hidden;
@@ -10,7 +10,9 @@
     padding: 0;
     margin: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 /* 
 Header Styling start
 */
@@ -21,10 +23,14 @@ Header Styling start
     font-family: 'Roboto', sans-serif;
     align-items: center;
 }
+.header > icon{
+    cursor: pointer;
+}
 
 .linkContainer > ul > li{ 
     list-style: none;
     font-size: 18px;
+    cursor: pointer;
 }
 .linkContainer > ul{ 
     display: flex;
@@ -90,7 +96,7 @@ Header Styling END
 
 .right > img{
     width: auto;
-    height: 400px;
+    height: 300px;
     padding-bottom: 10px;
 }
 /* Styling First Section end */
@@ -130,3 +136,102 @@ Header Styling END
 }
 
 /* Employee Section END */
+
+/* Quote Section Start */
+
+section.quote{
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 50px;
+    margin-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.mainText > p{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 750px;
+}
+
+.author{
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Quote Section END */
+
+/* Call to action styles*/
+
+section.callToAction{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+.c2aContainer{
+    padding: 100px;
+    background-color: #3882f6;
+    width: 70%;
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+
+.leftText{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.leftText > h1,
+.leftText > p{
+    font-family: 'Roboto',sans-serif;
+    color: #E5E7EB;
+}
+
+
+.rightText > button{
+    background: none;
+    border:thin solid white;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+
+}
+.rightText{
+    display: flex;
+    align-self: center;
+}
+
+/*  Call to action style end*/
+
+/* Footer start */
+
+footer{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 15px;
+    gap:30px;
+}
+
+.footer-right > a,
+.footer-left > a{
+    color: inherit;
+    text-decoration: none;
+}
+/* Footer END */
